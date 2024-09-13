@@ -41,6 +41,7 @@ then press N
 ```bash
 >>> nano /etc/ocserv/ocserv.conf
 ```
+copy these content
 ```bash
 auth = "plain[passwd=/etc/ocserv/ocpasswd]"
 tcp-port = 443
@@ -164,6 +165,7 @@ sudo iptables -t nat -L POSTROUTING
 ```bash
 >>> nano /etc/stunnel/stunnel.conf
 ```
+copy these content
 ```bash
 cert = /etc/stunnel/stunnel.pem
 pid = /etc/stunnel/stunnel.pid
@@ -186,6 +188,7 @@ connect = 0.0.0.0:443
 ```bash
 >>> nano /usr/lib/systemd/system/stunnel.service
 ```
+copy these content
 ```bash
 [Unit]
 Description=SSL tunnel for network daemons
@@ -215,11 +218,11 @@ PrivateTmp=false
 >>> sudo systemctl enable stunnel.service
 >>> sudo systemctl status stunnel.service
 ```
-
-13- Add floating IPs
+## Recommend: (add 2 floating IP and use them instead of your own IP. first IP for using direct VPN like MCI, and second IP for Iran server stunnel)
 ```bash
 >>> nano /etc/netplan/60-floating-ip.yaml
 ```
+copy these content
 ```bash
 network:
    version: 2
@@ -227,8 +230,8 @@ network:
    ethernets:
      eth0:
        addresses:
-       - <ip1>/32
-       - <ip2>/32
+       - <ip1 DIRECT>/32 
+       - <ip2 STUNNEL>/32
 
 ```
 
@@ -251,6 +254,7 @@ network:
 ```bash
 >>> nano /etc/stunnel/stunnel.conf
 ```
+copy these content
 ```bash
 pid = /etc/stunnel/stunnel.pid
 client = yes
@@ -265,6 +269,7 @@ connect = <Foreign sub domain>:990
 ```bash
 >>> nano /usr/lib/systemd/system/stunnel.service
 ```
+copy these content
 ```bash
 [Unit]
 Description=SSL tunnel for network daemons
