@@ -4,11 +4,9 @@
 
 1- Server A: Foreign server (Ubuntu 20.0.4)
 
-2- Server B: Iran server for tunneling for some ISP like Irancell (Ubuntu 20.0.4)
+2- Server B: Iran server for tunneling for some ISPs like Irancell (Ubuntu 20.0.4)
 
-3- Domain with 2 sub address
-
-4- occtl command tools
+3- Domain with 2 sub addresses
 
 
 ## Installation :
