@@ -242,7 +242,7 @@ network:
 >>> chmod +x install.sh
 >>> ./install.sh
 ```
-enter number 3
+enter 3 and press enter
 
 ## Server B: Iran server (Tunnel Server):
 
