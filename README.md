@@ -235,6 +235,14 @@ network:
 
 ```
 
+14- Add VPN user management panel
+```bash
+>>> git clone https://github.com/mmtaee/ocserv-users-management.git
+>>> cd ocserv-users-management/
+>>> chmod +x install.sh
+>>> ./install.sh
+```
+enter number 3
 
 ## Server B: Iran server (Tunnel Server):
 
