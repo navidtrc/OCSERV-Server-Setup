@@ -1,4 +1,4 @@
-# OCSERV (AnyConnect & OpenConnect VPN Server) + User Management
+# OCSERV VPN Server + User Management
 
 ## Requirements:
 
